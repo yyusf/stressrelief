@@ -1,0 +1,19 @@
+{
+  "name": "stressrelief",
+  "version": "1.0.0",
+  "description": "A stress relief website for my design unit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yyusf/stressrelief.git"
+  },
+  "author": "Yusuf Yildirim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yyusf/stressrelief/issues"
+  },
+  "homepage": "https://github.com/yyusf/stressrelief#readme"
+}

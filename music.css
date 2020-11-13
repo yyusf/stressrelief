@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alice&display=swap");
+
+body {
+  margin: auto 0;
+  background-image: url(backgroundblur.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #ffbd59;
+}
+
+.no-blur {
+  filter: blur(0);
+}
+
+li {
+  padding: 20px;
+}
+
+li > a {
+  color: white;
+  text-decoration: none;
+  font-family: "Alice", sans-serif;
+  font-size: 4rem;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.text {
+  display: flex;
+  padding-top: 7.5rem;
+  align-items: flex-end;
+  justify-content: center;
+  text-shadow: black 0px 0px 20px;
+  font-size: 2.2rem;
+}
+
+.nav-wrapper {
+  cursor: pointer;
+  background: rgba(0, 74, 173, 0.15);
+  font-size: 2em;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  transition: all 0.3s linear;
+}
+.main-nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  height: 15vh;
+  align-items: center;
+}
+
+.push {
+  margin-left: auto;
+}
+.grid-wrapper {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-items: center;
+  margin-top: 20rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-bottom: 10;
+  background: rgba(0, 74, 173, 0.5);
+}
+.flex {
+  display: flex;
+}
+
+/* images */
+.camp-img {
+  background: url(campfire.png);
+  background-size: cover;
+  background-position: center center;
+}
+
+.forest-img {
+  background: url(forest.png);
+  background-size: cover;
+  background-position: center center;
+}
+
+.piano-img {
+  background: url(piano.png);
+  background-size: cover;
+  background-position: center center;
+}
+.lofi-img {
+  background: url(lofi.png);
+  background-size: cover;
+  background-position: center center;
+}
+.rain-img {
+  background: url(rain.jpeg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.waves-img {
+  background: url(waves.png);
+  background-size: cover;
+  background-position: center center;
+}
+.zone {
+  cursor: pointer;
+
+  color: #fff;
+  font-size: 2em;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  transition: all 0.3s linear;
+}
+.img {
+  content: "";
+  display: block;
+  height: 0;
+  width: 0;
+  padding: calc(9 / 16 * 100%);
+}
+.box {
+  padding: 15vh;
+  margin: 20px;
+}
+
+.zone:hover {
+  box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px,
+    inset rgba(0, 0, 0, 0.15) 0px -10px 20px;
+}

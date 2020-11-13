@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="music.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="nav-wrapper sticky">
+      <ul class="main-nav">
+        <li><a href="managestress.html">Manage-stress</a></li>
+        <li><a href="scenes.html">Scenes</a></li>
+        <li class="push">
+          <a href="mainpage2.html"><i class="fas fa-home"></i></a>
+        </li>
+      </ul>
+    </nav>
+    <div class="musics grid-wrapper">
+      <div class="camp-img box zone img flex rectangle">
+        <div class="text">Campfire</div>
+        <div class="music1">
+          <a href="#" class="playPause audio" onclick="playPause()">
+            <audio class="sound" src="./sounds/Campfire-sound.mp3"></audio>
+          </a>
+        </div>
+      </div>
+      <div class="forest-img box zone img flex musics">
+        <div class="text">Nature</div>
+        <div class="music2">
+          <audio class="sound" src="./sounds/nature-sound.mp3"></audio>
+        </div>
+      </div>
+      <div class="lofi-img box zone img flex rectangle musics">
+        <div class="text">Lo-Fi</div>
+        <div class="music3">
+          <audio class="sound" src="./sounds/lofi-sound.mp3"></audio>
+        </div>
+      </div>
+      <div class="piano-img box zone img flex musics">
+        <div class="text">Soothing Piano</div>
+        <div class="music4">
+          <audio class="sound" src="./sounds/piano-sound.mp3"></audio>
+        </div>
+      </div>
+      <div class="waves-img box zone img flex musics">
+        <div class="text">Waves</div>
+        <div class="music5">
+          <audio class="sound" src="./sounds/waves-sound.mp3"></audio>
+        </div>
+      </div>
+      <div class="rain-img box zone img flex musics">
+        <div class="text">Rain</div>
+        <div class="music6">
+          <audio class="sound" src="./sounds/rain-sound.mp3"></audio>
+        </div>
+      </div>
+    </div>
+
+    <script src="music.js"></script>
+    <script
+      src="https://kit.fontawesome.com/d8f7f92512.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+body {
+  overflow: visible;
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  background: url(Background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 1100px;
+  height: 100%;
+  overflow: auto;
+  margin: 0 auto;
+  display: flex;
+  display: grid;
+  grid-template-rows: 2fr 1fr 1fr;
+  grid-template-areas:
+    "logo"
+    "slogan"
+    "my-btn";
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+/* .container2 {
+    display: flex;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: 2fr 1fr 1fr;
+    grid-template-areas:
+      "logo"
+      "slogan"
+      "my-btn";
+  } */
+
+.slogan {
+  grid-area: slogan;
+  font-weight: 700;
+  background-color: #e8cb9e;
+  color: #1e5453;
+  height: 7rem;
+  width: 40rem;
+  display: flex;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 2%;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  grid-area: logo;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 2%;
+}
+.my-btn {
+  display: flex;
+  flex-direction: row;
+  max-width: 35rem;
+  padding-top: 0.5rem;
+  padding-bottom: 5rem;
+  justify-content: space-between;
+  align-items: center;
+  grid-area: my-btn;
+  opacity: 0.8;
+}
+
+img {
+  max-width: 100%;
+}
+
+@media (max-width: 500px) {
+  .container {
+    grid-template-rows: 2fr 2fr 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  body {
+    overflow: visible;
+  }
+  .my-btn {
+    display: flex;
+    flex-direction: column;
+    max-width: 35rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: my-btn;
+    opacity: 0.8;
+  }
+}

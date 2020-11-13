@@ -1,0 +1,17 @@
+html elements to use:
+Content sectioning:
+<article>
+<nav>
+<header>
+<footer>
+<main>
+<h1>,<h2>,<h3>,<h4>,<h5>,<h6>
+<div>
+<ul> unordered list
+
+image and multimedia:
+<audio>
+<img>
+
+Forms:
+<button>

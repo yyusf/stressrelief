@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alice&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: auto 0;
+  background-image: url(backgroundblur.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #ffbd59;
+}
+/* navbar */
+.nav-wrapper {
+  cursor: pointer;
+  background: rgba(0, 74, 173, 0.15);
+  font-size: 2em;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  transition: all 0.3s linear;
+}
+.main-nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  height: 15vh;
+  align-items: center;
+}
+.push {
+  margin-left: auto;
+}
+
+li {
+  padding: 20px;
+}
+
+li > a {
+  color: white;
+  text-decoration: none;
+  font-family: "Alice", sans-serif;
+  font-size: 4rem;
+}
+
+/* scenes */
+
+/* .gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  min-height: 100vh;
+  grid-gap: 2rem;
+} */
+
+.gallery {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-items: center;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  background: rgba(0, 74, 173, 0.5);
+  margin-bottom: 10rem;
+  margin-top: 10rem;
+}
+
+.img-container {
+  overflow: hidden;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+  size: cover;
+  position: center center;
+}
+
+.img-container img:hover {
+  transform: scale(1.2);
+}
+
+.modal {
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.25s ease-out;
+}
+.modal.open {
+  opacity: 1;
+  pointer-events: all;
+}
+.full-img {
+  position: absolute;
+  height: 70%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.5);
+  transition: all 0.25s ease-out;
+}
+.full-img.open {
+  transform: translate(-50%, -50%) scale(1);
+}
+.modal p {
+  color: white;
+  font-size: 2rem;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -5%);
+}
